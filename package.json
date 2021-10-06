@@ -1,0 +1,14 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "testing routes and patron design MVC",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Acuna, Nicolas Ignacio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
