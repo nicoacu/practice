@@ -1,11 +1,11 @@
+// ************ Require's ************
 const express = require("express");
-const mainRouter = express.Router();
+const router = express.Router();
+
+// ************ Controller Require ************
 const mainController = require("../controllers/mainController");
-const autorizacion = require("../../middlewares/auth");
 
-// Rutas
-mainRouter.get("/", mainController.index);
+router.get("/", mainController.index);
+//router.???('/search', mainController.search);
 
-mainRouter.get("/admin", autorizacion, mainController.admin);
-
-module.exports = mainRouter;
+module.exports = router;
